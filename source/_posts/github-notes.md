@@ -67,8 +67,7 @@ tags: github
 #### 4.基本数据类型间的转换:
 ```bash
 数据类型从小到大依次为:
-   byte-short-int-long-float-double
-        char-
+byte,short,char—> int —> long—> float —> double
 ```
   **1)两种方式:**
     **1.1)自动类型转换:小类型到大类型**
