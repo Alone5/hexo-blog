@@ -185,11 +185,11 @@ var x = 10;
 - window中常见的属性
 	1. location  位置
 		获得和修改浏览器的访问地址: 
-		```bash
+```bash
 		location.href //获取
 		location.href="http://tmooc.cn" //修改
 		location.reload(); 重新加载(刷新)
-		```
+```
 	2. history  历史  当前窗口的历史页面
 		history.length   页面数量
 		history.back()  返回上一页面
@@ -211,3 +211,44 @@ var x = 10;
 "2+3*5-5"
 
 #### 通过js代码给标签添加css样式
+
+#### 通过标签名获取元素们
+```bash
+	var arr = document.getElementsByTagName("标签名");
+```
+
+#### 定时器
+- 开启   var timer = setInterval(方法,时间间隔);
+- 停止   clearInterval(timer);
+
+#### 只执行一次的定时器
+- setTimeout(方法,时间间隔);
+
+#### DOM Document Object Model文档对象模型
+- 和页面相关的内容
+
+#### 查找页面元素的方法
+1. 通过id查找
+	- document.getElementById()
+2. 通过标签名查找
+	- document.getElementsByTagName()
+3. 通过标签的name属性查找
+	- document.getElementsByName()
+4. 通过标签的class属性查找 
+	- document.getElementsByClassName();
+5. 获取页面的body元素
+	- document.body
+
+#### 创建新元素
+- var d = document.createElement("div");
+	- d.innerText="abc";
+
+#### 添加到页面
+-  父元素.appendChild(新元素);
+	- document.body.appendChild(d);
+
+#### 插入元素
+-  父元素.insertBefore(新元素,弟弟元素);
+
+#### 删除元素
+- 父元素.removeChild(被删除的元素);
