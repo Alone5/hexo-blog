@@ -58,7 +58,7 @@ Object newInstance()
 package reflect;
 import java.util.Scanner;
 public class ReflectDemo2 {
-	public static void main(String[] args) throws ClassNotFoundException, InstantiationException, IllegalAccessException {
+	public static void main(String[] args) throws Exception {
 	Scanner scan = new Scanner(System.in);
 		System.out.println("请输入要实例化的类名：");
 		String className = scan.nextLine();
@@ -161,37 +161,4 @@ public class ReflectDemo5 {
 	}
 }
 ```
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
