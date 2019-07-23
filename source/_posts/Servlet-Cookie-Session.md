@@ -120,3 +120,10 @@ public class AddCookieServlet extends HttpServlet {
 }
 ```
 
+### 什么时候需要使用Session
+
+通常，使用Session存储：
+
+1. 用户的身份的唯一标识，例如：用户的id；
+2. 使用频率较高的数据，例如：用户名；
+3. 不便于使用其它解决方案去存储或者传递的数据。
