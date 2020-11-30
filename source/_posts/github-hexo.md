@@ -80,6 +80,15 @@ hexo init <folder> # 就是你创建的文件夹
 cd <folder>
 npm install
 ```
+
+##### 补充执行`npm install`命令进度条停止不动问题！
+安装angular cli工具时，，发现进度条一直卡住不动，原因应该是国内的网络连接npm速度较慢，甚至很多东西都无法下载安装。那么如何解决这个问题呢？
+在这里我选择使用代理registry
+```bash
+ 在执行`npm install`命令前先执行代理命令
+ npm config set registry https://registry.npm.taobao.org
+```
+
 #### 创建一篇文章
 ```bash
 hexo new 文章名
